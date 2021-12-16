@@ -10,7 +10,6 @@ const TinderCards = () => {
   useEffect(() => {
     const fetchData = async () => {
       const req = await Axios.get('/tinder/cards');
-      console.log(req);
       setPeople(req.data);
     }
 
@@ -37,7 +36,7 @@ const TinderCards = () => {
             onSwipe={(dir) => swiped(dir, person.name)}
             onCardLeftScreen={() => outOfFrame(person.name)}
           >
-            <div style={{ backgroundImage: `url(${person.url})` }} className={'card'}>
+            <div style={{ backgroundImage: `url(${person.imgUrl})` }} className={'card'}>
               <h3>{person.name}</h3>
             </div>
           </TinderCard>

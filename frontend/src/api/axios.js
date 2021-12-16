@@ -1,6 +1,6 @@
-import Axios from "axios";
+import axios from "axios";
 
-const baseUrl = Axios.create({
+const baseUrl = axios.create({
   baseURL: 'http://localhost:8001'
 });
 
