@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "RukshanNuwan <rukshannuwanbit@gmail.com>",
+  "author": "RukshanNuwan <shanwijendra.dev@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
